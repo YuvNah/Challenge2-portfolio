@@ -1,0 +1,88 @@
+:root {
+  --dark: #113946;
+  --dark-brown: #bca37f;
+  --light-brown: #ead7bb;
+  --cream: #fff2d8;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cream);
+}
+
+header {
+  background-color: var(--dark);
+  display: block;
+}
+
+header h2 {
+  display: inline-block;
+  color: var(--light-brown);
+  padding: 10px;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  list-style: none;
+  color: var(--dark-brown);
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--dark-brown);
+}
+
+header nav ul li a:visited {
+  text-decoration: none;
+}
+main {
+  text-align: center;
+}
+
+.about-me-section {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-me-section img {
+  width: 200px;
+}
+
+.work-section {
+  padding-top: 40px;
+}
+
+.work-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.project-card img {
+  width: 100px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.contact-section ul li {
+  display: inline-block;
+  padding: 10px;
+}
