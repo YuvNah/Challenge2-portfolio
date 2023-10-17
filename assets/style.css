@@ -19,6 +19,7 @@ header h2 {
   display: inline-block;
   color: var(--light-brown);
   padding: 10px;
+  align-items: center;
 }
 
 header nav {
@@ -45,6 +46,8 @@ header nav ul li a:visited {
 }
 main {
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .about-me-section {
@@ -64,25 +67,70 @@ main {
 
 .work-cards {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.project-card img {
-  width: 100px;
+.project-card {
+  flex: 0 0 75%;
+  border: solid var(--light-brown);
 }
 
+.project-card img {
+  height: 100px;
+  width: 200px;
+}
+
+.project-card:hover {
+  border: solid var(--dark);
+  cursor: pointer;
+}
+
+.project-card h4 a {
+  text-decoration: none;
+}
+
+#project1 {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  padding: 0;
+}
+
+.all-projects {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .contact-section {
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding: 30px;
+  background-color: var(--dark);
+  color: var(--light-brown);
+  margin-top: 20px;
 }
 
 .contact-section ul li {
   display: inline-block;
-  padding: 10px;
+  padding-left: 50px;
+}
+
+.contact-section ul li a {
+  color: var(--light-brown);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  header nav {
+    flex-direction: column;
+  }
+  .about-me-section {
+    flex-direction: column;
+  }
+  .work-cards {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
